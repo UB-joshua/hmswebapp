@@ -1,0 +1,124 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/validation.js"></script>
+    <title>Bookings</title>
+ 
+    <style>
+  
+  body{
+   
+      background-image:url("../images/register.jpeg") ;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  h1{
+  
+      color:rgb(12, 182, 12);margin:10px;
+  
+  }
+  form{
+      width:25%;
+      background:grey;
+  }
+  input [type="text"],[type="text"],[type="password"],[type="number"]{
+  
+      width:90%;
+      height:25px;
+      font-size:10px;
+      margin:10px;
+      outline:none;
+  }
+  input[type="submit"]{
+      width:90%;
+      height:25px;
+      color:white;
+      background:lightblue;
+      cursor:pointer;
+      outline:none;
+      margin:8px;
+  }
+  
+    </style>
+  </head>
+  
+  <header>
+    <button class="home">
+      <a href="/">Home</a>
+    </button>
+
+  </header>
+
+
+
+
+
+  <body>
+     <h1>{{messages}}</h1>
+     <center>
+     <h1>Booking Details</h1>
+     <form action="/user_booking" name="bookingform" id="bookingform" method="post" name="registrationform" onsubmit="return validations()">
+      <input id="patientname" name="patientname" type="text" placeholder="patient name" onblur="return validate_patientname()"><br>
+      <input id="patientage" name="patientage" type="number" placeholder="patient age" onblur="return validate_patientage()"><br>
+      <input id="disease" name="disease" type="text" placeholder="disease" onblur="return validate_disease()"><br>
+      <input id="phone"   name="phone" type="number" placeholder="phone number" onblur="return check_phone()"><br>
+      Appointment date:  <input id="date" name="date" type="date" onblur="return validate_appointment()"><br>
+      <input type="submit" value="Submit"><br>
+     </form>
+  
+  
+     </center>
+  
+      
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

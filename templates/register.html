@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="static/validation.js"></script>
+  <style>
+
+body{
+ 
+    background-image:url("static/images/register.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+
+    color:rgb(12, 182, 12);margin:10px;
+
+}
+form{
+    width:25%;
+    background:grey;
+}
+input [type="text"],[type="text"],[type="password"],[type="number"]{
+
+    width:90%;
+    height:25px;
+    font-size:10px;
+    margin:10px;
+    outline:none;
+}
+input[type="submit"]{
+    width:90%;
+    height:25px;
+    color:white;
+    background:lightblue;
+    cursor:pointer;
+    outline:none;
+    margin:8px;
+}
+
+  </style>
+</head>
+
+<body>
+
+    <header>
+        <button class="home">
+          <a href="/">Go to Home</a>
+        </button>
+    
+      </header>
+
+
+
+
+
+
+
+
+   <center>
+   <h1>create your account</h1>
+   <form action="/registeruser" id="regtable" method="post" name="registrationform" onsubmit="return validateall()">
+    <input id="username" type="text" name="username"placeholder="name" onblur="return validateUserName()"><br>
+    <input id="password" type="password" name="password"placeholder="password" onblur="return validatePassword()"><br>
+    <input id="mobile" type="number" name="mobile" placeholder="mobile"><br>
+    <input type="submit" value="Register"><br>
+   </form>
+
+
+   </center>
+
+    
+</body>
+</html>
